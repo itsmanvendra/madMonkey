@@ -10,6 +10,7 @@ module.exports = {
     },
      fontFamily: {
       display: ['Prompt', 'sans-serif'],
+      xyz: ['Montserrat',  'sans-serif'],
     },
     extend: {
       colors: {
@@ -18,6 +19,7 @@ module.exports = {
         btnEnd: '#205284',
         headingCol: '#FFFF00',
         cardCol: '#E63946',
+        lightBlack: '#00000080',
       },
     },
   },

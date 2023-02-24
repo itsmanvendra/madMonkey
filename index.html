@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Prompt:wght@500&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
     <title>Mad Monkey</title>
 </head>
 <body class="bg-bgBlack">
@@ -21,24 +24,62 @@
             </div>
             <!-- menu items -->
             <div class="hidden md:flex space-x-6">
-                <a href="#" class="text-white text-lg font-medium hover:text-orange-400 ">Contact</a>
-                <a href="#" class="text-white  text-lg font-medium hover:text-orange-400">CaseStudies</a>
-                <a href="#" class="text-white  text-lg font-medium hover:text-orange-400">Services</a>
-                <a href="#" class="text-white  text-lg font-medium hover:text-orange-400">Testimonials</a>
+                
+                <a href="./services.html" class="text-white  text-sm lg:text-md font-medium hover:text-orange-400">Services</a>
+                <a href="#" class="text-white  text-sm lg:text-md font-medium hover:text-orange-400">Testimonials</a>
+                <a href="#" class="text-white text-sm lg:text-md font-medium hover:text-orange-400 ">Our Vision</a>
+                <a href="#" class="text-white  text-sm lg:text-md font-medium hover:text-orange-400">Blogs</a>
+                <a href="#" class="text-white  text-sm lg:text-md font-medium hover:text-orange-400">Contact Us</a>
                 
             </div>
             <!-- button -->
             <div>
                 <button class="hidden lg:block bg-gradient-to-br from-btnStart to-btnEnd text-white font-medium py-2 px-6 rounded-full hover:from-pink-500 hover:to-yellow-500 ">Join 1 hour free advice</button>
             </div>
+            <!-- hamburger -->
+            <button class=" block hamburger focus:outline-none md:hidden" id="menu.btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+                
 
         </div>
+        <!-- menu -->
+        <div class="md:hidden">
+            <div class="block  absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-[#1B2025] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-xl "
+                id="menu">
+            
+                <a href="./services.html" class="text-white  text-lg font-medium hover:text-orange-400">Services</a>
+                <a href="#" class="text-white  text-lg font-medium hover:text-orange-400">Testimonials</a>
+                <a href="#" class="text-white text-lg font-medium hover:text-orange-400 ">Our Vision</a>
+                <a href="#" class="text-white  text-lg font-medium hover:text-orange-400">Blogs</a>
+                <a href="#" class="text-white  text-lg font-medium hover:text-orange-400">Contact Us</a>
+            </div>
+        </div>
+        
     </nav>
     <section>
+
+    </section>
+    <section>
         <!-- flex-container -->
-        <div class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        <div class="md:hidden">
+            <div class="block  flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-xl  "
+                id="menu1">
+        
+                <a href="./services.html" class="text-transparent  text-lg font-medium">Services</a>
+                <a href="#" class="text-transparent   text-lg font-medium ">Testimonials</a>
+                <a href="#" class="text-transparent  text-lg font-medium  ">Our Vision</a>
+                <a href="#" class="text-transparent   text-lg font-medium ">Blogs</a>
+                <a href="#" class="text-transparent   text-lg font-medium">Contact Us</a>
+            </div>
+        </div>
+        <div class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
             <!-- left-container -->
+            
             <div class="flex flex-col mb-16  space-y-12 md:w-1/2  mr-5 ">
+                
                 <h1 class=" text-4xl font-display text-headingCol  text-center md:text-5xl md:text-left lg:text-7xl">
                     India's Leading Product Marketing Agency
                 </h1>
@@ -69,39 +110,39 @@
     </section>
     <section>
         <!-- grid-container -->
-        <div class="container grid grid-cols-1 gap-4 my-16 md:grid-cols-3 mx-auto">
+        <div class="container grid grid-cols-1 gap-4 my-16 md:grid-cols-3 mx-auto ">
             <!-- left-container -->
             <div class=" p-6 flex justify-center content-center">
-                <div class="bg-white rounded-xl p-6 ">
-                    <img src="img/Tie.jpeg" alt="aboutImg" class="w-full h-full" >
-                </div>
-                
+                <img src="img/Frame 20.png" alt="aboutImg"  >    
             </div>
             <!-- right-container -->
             <div class="md:col-span-2 p-6 justify-center items-center md:justify-start ">
-                <p class="text-md font-display text-headingCol mb-2 text-center md:text-left lg:text-2md ">
-                    ABOUT US
-                </p>
-                <h1 class=" text-2xl font-display text-white  text-center md:text-left lg:text-4xl xl:text-5xl">
-                    Your Brand, Our Reach,
-                    <br>
-                    a saga forged in heaven
-                </h1>
-                <p class=" text-center text-slate-300 mt-6 text-md md:text-left lg:text-xl">
-                    Welcome to the jungle of Mad Monkey. To put into layman’s terms, we are a group of service providers who
-                    “curate-with-care”, the most impactful solutions to your marketing needs.
-                    <br>
-                    <br>
-                    In other words, we put the “fun” in the “fun-damentals” of your marketing needs, from transformation, development to
-                    execution.
-                    <br>
-                    <br>
-                    Our motto is to customize solutions to suit your Brand needs that make an impact in the market!
-                    <br>
-                    <br>
-                    Connect with us to leave your worry behind and go ballistic into the wide world of brands, and this is our Madmonkey
-                    promise.
-                </p>
+                <div class="p-6 flex flex-col justify-center content-center">
+                    <p class="text-md font-display text-headingCol mb-2 text-center md:text-left lg:text-2md ">
+                        ABOUT US
+                    </p>
+                    <h1 class=" text-2xl font-display text-white  text-center md:text-left lg:text-4xl xl:text-5xl">
+                        Your Brand, Our Reach,
+                        <br>
+                        a saga forged in heaven
+                    </h1>
+                    <p class=" text-center text-slate-300 mt-6 text-md md:text-left lg:text-xl">
+                        Welcome to the jungle of Mad Monkey. To put into layman’s terms, we are a group of service providers who
+                        “curate-with-care”, the most impactful solutions to your marketing needs.
+                        <br>
+                        <br>
+                        In other words, we put the “fun” in the “fun-damentals” of your marketing needs, from transformation, development to
+                        execution.
+                        <br>
+                        <br>
+                        Our motto is to customize solutions to suit your Brand needs that make an impact in the market!
+                        <br>
+                        <br>
+                        Connect with us to leave your worry behind and go ballistic into the wide world of brands, and this is our Madmonkey
+                        promise.
+                    </p>
+                </div>
+                
             </div>
 
         </div>
@@ -129,8 +170,8 @@
                     To understand your marketing needs, we study your business and come up with a tailored solution.
                 </p>
                 
-                    <div class="bg-[url('/img/1.png')] justify-self-stretch rounded-xl p-6 ">
-                        <img src="img/firstImg.png" alt="aboutImg" class="w-full h-full">
+                    <div class="bg-[#F6BD60] justify-self-stretch rounded-xl p-6 ">
+                        <img src="img/Frame 5.png" alt="aboutImg" class="w-full h-full">
                     </div>
                 
                 
@@ -148,8 +189,8 @@
 
                 </p>
                
-                    <div class="bg-[url('/img/3.png')] rounded-xl p-6 ">
-                        <img src="img/secondImg.png" alt="aboutImg" class="w-full h-full">
+                    <div class="bg-[#D8807C] rounded-xl p-6 ">
+                        <img src="img/Frame 6.png" alt="aboutImg" class="w-full h-full">
                     </div>
                 
                
@@ -166,8 +207,8 @@
                     Our highly skilled and determined team then put their heart and soul to execute these strategies.
                 </p>
                 
-                    <div class="bg-[url('/img/2.png')] rounded-xl p-6 ">
-                        <img src="img/thirdImg.png" alt="aboutImg" class="w-full h-full">
+                    <div class="bg-[#5ED0E7] rounded-xl p-6 ">
+                        <img src="img/Frame 4.png" alt="aboutImg" class="w-full h-full">
                     </div>
 
             </div>
@@ -189,55 +230,319 @@
         </div>
     </section>
     <section >
-        <div class="container grid grid-cols-1 gap-4 my-16 mx-auto ">
+        <div class="container grid grid-cols-1 gap-4 my-16 mx-auto p-6">
+            <div class="pt-16  justify-center items-center md:justify-start ">
+                <p class="text-lg font-display text-headingCol mb-2 text-center md:text-left lg:text-2lg ">
+                    RESULT-DRIVEN SOLUTIONS 
+                </p>
+            </div>
+            <div class="container grid grid-cols-2 gap-4  mx-auto mb-6">
+                <div class="col-span-2 md:col-span-1 p-6  justify-center content-center xl:pt-10">
+                    
+                    <h1 class=" text-2xl font-display text-white  text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl">
+                        We learn, adapt & innovate
+                    </h1>
+                    <p class=" text-center text-slate-300 mt-6 text-md pb-4 md:text-left lg:text-xl">
+                        In today’s world, there is no defined solution. We are life-long learning experts with a strong focus on generating results and boosting brand trust. We are different because we believe in bringing new ideas to the table for every
+                        client. Our work is driven by a thorough research and understanding customized for each brand to unlock its own
+                        potential value.
+                    </p>
+                </div>
+                <div class="col-span-2  md:col-span-1 p-6 flex justify-center content-center">
+                    <div class=" rounded-xl p-6 ">
+                        <img src="img/Simply Whyte Design 1.png" alt="solutionImg" class="w-full h-80">
+                    </div>
+                
+                </div>
+                
+
+            </div>
+            <div class="container grid grid-cols-2 gap-4  mx-auto mb-6">
+                <div class="col-span-2 md:col-span-1 p-2  justify-center items-center md:justify-start xl:pt-10">
+            
+                    <h1 class=" text-2xl font-display text-white  text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl">
+                        We work anywhere & everywhere
+                    </h1>
+                    <p class=" text-center text-slate-300 mt-6 text-md pb-4 md:text-left lg:text-xl">
+                        From A to Z, we work through a diverse array of e-commerce portals to deliver the best of media and marketing solutions
+                        for your brand
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="container grid grid-cols-2 gap-4  mx-auto mb-6">
+                <div class="col-span-2  md:col-span-2 py-4 px-2 md:p-6 flex justify-center content-center">
+                    <div class=" rounded-xl p-2 md:p-6 ">
+                        <img src="img/Group 93.png" alt="solutionImg" class="w-full h-full">
+                    </div>
+                
+                </div>
+            </div>
+            <div class="container grid grid-cols-2 gap-4  mx-auto mb-6">
+                <div class="col-span-2 md:col-span-1 p-6 flex justify-center content-center">
+                    <div class="rounded-xl p-6 ">
+                        <img src="img/Group 64.png" alt="solutionImg" class="w-full h-full">
+                    </div>
+                
+                </div>
+                <div class="col-span-2 md:col-span-1 p-2  justify-center items-center md:justify-start xl:pt-10">
+            
+                    <h1 class=" text-2xl font-display text-white  text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl">
+                        Want campaigns on your own platform ?
+                    </h1>
+                    <p class=" text-center text-slate-300 mt-6 text-md pb-4 md:text-left lg:text-xl">
+                        The brand is all about how your customers think about you. With our extensive experience in E-commerce marketing, grow
+                        your brand name from scratch.
+                        Kick-start your platform, Ignite the fire, sit back and watch Mad Monkey spread your light in the "Lanka" of budding
+                        entrepreneurship.
+                    </p>
+                    <div class="flex justify-center md:justify-start ">
+                        <button class="bg-white text-bgBlack text-xl md:text-2xl font-medium py-4 px-6 rounded-xl md:text-left">SPEAK TO US
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
             <div class="p-6 justify-center items-center md:justify-start ">
-                <p class="text-md font-display text-headingCol mb-2 text-center md:text-left lg:text-2md ">
+                <p class="text-lg font-display text-headingCol mb-2 text-center md:text-left lg:text-2lg ">
                     WHY US?
                 </p>
-                <h1 class=" text-2xl font-display text-white  text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl">
+                <h1 class=" text-2xl font-display text-white py-6  text-center md:text-left md:text-3xl lg:text-4xl xl:text-5xl">
                     We belief in customized approach
                 </h1>
             </div>
-        </div>
-        <div class="container grid grid-cols-3 gap-4 mt-16 mx-auto ">
-            <div class="col-span-3 md:col-span-1 p-6  justify-center items-center md:justify-start ">
-                <div class="bg-cardCol justify-self-stretch rounded-xl p-6 ">
+        
+        <div class="container grid grid-cols-3 gap-4  mx-auto px-6 mb-16 ">
+            <div class="bg-cardCol col-span-3 md:col-span-1 p-6  justify-center items-center rounded-xl md:justify-start ">
+                <div class=" justify-self-stretch  p-6 ">
                     <img src="img/emoji1.png" alt="emojiImg" class=" hidden md:block w-20 h-20">
                     <p class="text-lg font-display text-white mb-2 text-center md:text-left lg:text-lg ">
                         Cost Effective
                     </p>
-                    <p class="text-md text-white mb-2 text-center md:text-left lg:text-2md ">
+                    <p class="text-md font-xyz text-white mb-2 text-center md:text-left lg:text-2md ">
                         Less like the shopping malls, and more like the Sarojini Nagar, we believe in cost and quality. Now that you have found Madmonkey, we promise the most reasonable investment to most effective solutions, in the least time possible.
                     </p>
                 
                 </div>
             </div>
-            <div class="col-span-3 md:col-span-1 p-6  justify-center items-center md:justify-start ">
-                <div class="bg-cardCol justify-self-stretch rounded-xl p-6 ">
+            <div class="bg-cardCol col-span-3 md:col-span-1 p-6  justify-center items-center rounded-xl md:justify-start ">
+                <div class=" justify-self-stretch p-6 ">
                     <img src="img/cool.png" alt="emojiImg" class=" hidden md:block w-20 h-20">
                     <p class="text-lg font-display text-white mb-2 text-center md:text-left lg:text-lg ">
                         Brand Camaraderie
                     </p>
-                    <p class="text-md text-white mb-2 text-center md:text-left lg:text-2md ">
+                    <p class="text-md font-xyz text-white mb-2 text-center md:text-left lg:text-2md ">
                         The best way to get to know someone is to spend time, analyze and understand. That is exactly what we do! We take our time to know your brand, personalize solutions to your problems and et voila! double your profits both in money and mirth.
                     </p>
 
                 </div>
             </div>
-            <div class="col-span-3 md:col-span-1 p-6  justify-center items-center md:justify-start ">
-                <div class="bg-cardCol justify-self-stretch rounded-xl p-6 ">
+            <div class="bg-cardCol col-span-3 md:col-span-1 p-6  justify-center items-center rounded-xl md:justify-start ">
+                <div class="justify-self-stretch p-6 ">
                     <img src="img/blush.png" alt="emojiImg" class=" hidden md:block w-20 h-20">
                     <p class="text-lg font-display text-white mb-2 text-center md:text-left lg:text-lg ">
                         Personalized assistance
                     </p>
-                    <p class="text-md text-white mb-2 text-center md:text-left lg:text-2md ">
+                    <p class="text-md font-xyz text-white mb-2 text-center md:text-left lg:text-2md ">
                         Throughout our journey, we have trained our professionals in customer support. So rest assured, any time you have a query or discrepancy, we shall be there on the other side of the telephone, walking through every doubt in your mind.
                     </p>
-            
                 </div>
             </div>
         </div>
     </section>
+    <section class="bg-[#08BA64]">
+        <div class=" mx-auto p-16">
+            <h1 class=" text-4xl font-display text-white pb-2 text-center md:text-5xl lg:text-6xl xl:text-7xl ">
+                Some numbers that matter
+            </h1>
+            <p class="text-2md font-xyz text-white mb-2 text-center md:text-xl lg:text-2xl xl:text-3xl ">
+                Our achievement in the journey depicted in numbers
+            </p>
+            <div class="container grid grid-cols-4 gap-2  mx-auto mb-10 mt-10">
+                <div class="col-span-4 md:col-span-2 lg:col-span-1  p-4">
+                    <div class="md:border-r-2 md:border-white  pr-3">
+                        <p class="text-2xl font-display text-headingCol mb-2 text-center lg:text-4xl ">
+                            50+
+                        </p>
+                        <p class="text-xl font-xyz text-white mb-2 text-center  xl:text-2xl ">
+                            Happy Clients
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-span-4 md:col-span-2 lg:col-span-1 p-4">
+                    <div class="lg:border-r-2 lg:border-white  pr-3">
+                        <p class="text-2xl font-display text-headingCol mb-2 text-center lg:text-4xl ">
+                            25K+
+                        </p>
+                        <p class="text-xl font-xyz text-white mb-2 text-center  xl:text-2xl ">
+                            Reviews Posted
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-span-4 md:col-span-2 lg:col-span-1  p-4">
+                    <div class="md:border-r-2 md:border-white  pr-3">
+                        <p class="text-2xl font-display text-headingCol mb-2 text-center lg:text-4xl ">
+                            21
+                        </p>
+                        <p class="text-md font-xyz text-white mb-2 text-center  xl:text-xl ">
+                            Dedicated Members
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-span-4 md:col-span-2 lg:col-span-1  p-4">
+                    <div class="pr-3">
+                        <p class="text-2xl font-display text-headingCol mb-2 text-center lg:text-4xl ">
+                            2
+                        </p>
+                        <p class="text-xl font-xyz text-white mb-2 text-center  xl:text-2xl ">
+                            Years of Journey
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="px-16 pt-10 mx-auto justify-center items-center  ">
+            <p class="text-xl font-display text-bgBlack text-center lg:text-2xl ">
+                --- OUR CLIENTS ---
+            </p>
+            
+        </div>
+        <div class="container grid grid-cols-6 gap-2  mx-auto px-16 pb-16  justify-center content-center">
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/liveAbit.png" alt="logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/damensch.png" alt="logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/manMatters.png" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/bombay-shaving-.png" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/flowMo.png" alt="clientlogo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/The Vitamin Factory Logo 1.png" alt="clientlogo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/podonly.png" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/method.svg" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/soltatva.png" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/tripleGears.png" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/origin.png" alt="client logo">
+            </div>
+            <div class="col-span-3 md:col-span-2 lg:col-span-1 p-4 justify-self-center self-center">
+                <img src="img/tryB.png" alt="client logo">
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="mx-auto p-10  ">
+            <div class="container grid grid-cols-5 gap-5 justify-center content-center  bg-gradient-to-br from-[#FF000F] to-[#FA00FF] rounded-xl ">
+                <div class="col-span-5 md:col-span-3 justify-center content-center  ">
+                    <div class="p-10 justify-center content-center ">
+                        <p class="text-md font-display text-white text-center md:text-left md:text-xl  lg:text-3xl ">
+                            Make Mad Monkey your growth partner today
+                        </p>
+                        <!-- <div class="flex flex-row content-center justify-center md:justify-start">
+                            <a href="#" class="text-white text-lg font-medium self-center ">Contact Us</a>
+                            <img src="img/Group 105.png" alt="logo" href="#"> 
+                        </div> -->
+                        
+                        <div class="flex justify-center md:justify-start ">
+                            <button class="bg-gradient-to-br from-btnStart to-btnEnd text-white text-md md:text-xl font-medium mt-3 py-2 px-3 rounded-xl md:text-left " href="#">Contact Us
+                            </button>
+                        </div>
+                    
+                    </div>
+                    
+
+                </div>
+                <div class="hidden md:block md:col-span-2 justify-self-start self-center md:justify-self-center">
+                    <img src="img/Glasses.png" alt="logo" class="mx-auto w-40 h-40">
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container grid grid-cols-5 gap-3  md:gap-8  mx-auto p-10  justify-center content-center">
+            <div class="col-span-5 md:col-span-2 justify-center content-center order-3 md:order-1 pb-4">
+                <img src="img/Mad Monkey (1).png" alt="logo" class="mx-auto">
+                <p class="text-xl font-display text-[#E63946] text-center  lg:text-2xl ">
+                    India’s Leading Product Marketing Agency
+                </p>
+
+            </div>
+            <div class="col-span-5 md:col-span-1 justify-self-start self-center order-1 md:order-2 md:justify-self-center pb-4">
+                <p class="text-xl font-display text-[#E63946] pb-2 text-center md:text-left lg:text-2xl ">
+                    Quick Links
+                </p>
+                <div class="flex flex-col px-3 md:px-0">
+                    <a href="#" class=" text-sm font-medium hover:text-orange-400 ">Home</a>
+                    <a href="#" class="  text-sm font-medium hover:text-orange-400">CaseStudies</a>
+                    <a href="#" class="  text-sm font-medium hover:text-orange-400">Our Vision</a>
+                    <a href="#" class="  text-sm font-medium hover:text-orange-400">Services</a>
+                </div>
+            </div>
+            <div class="col-span-5 md:col-span-1 justify-self-start self-start order-2 md:order-3 md:justify-self-center pb-4">
+                <p class="text-xl font-display text-[#E63946] text-left lg:text-2xl ">
+                    Reach Us
+                </p>
+                <div class="flex flex-col px-3 md:px-0">
+                    <p  class=" text-md font-medium  ">+91 91106 60335</p>
+                    <a href="mailto:hey@madmonkey.in" class=" text-sm font-medium hover:text-orange-400">hey@madmonkey.in</a>
+                    
+                </div>
+            
+            </div>
+            <div class="col-span-5 md:col-span-1 justify-self-center  order-4 md:order-4 pb-4">
+                <p class="text-xl font-xyz md:font-display text-[#E63946] text-center lg:text-2xl ">
+                    Connect With Us
+                </p>
+                <div class="flex flex-row content-center justify-center ">
+                    <img src="img/facebook.png" alt="">
+                    <img src="img/instagram.png" alt="">
+                    <img src="img/linkedin.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="bg-[#FF6E1A]">
+        <div class="p-2 mx-auto justify-center items-center  ">
+            <p class="text-md font-xyz text-white text-center lg:text-xl ">
+                Designed & built with passion in India 🚀
+            </p>
+        
+        </div>
+    </section>
     
+    
+
 </body>
 </html>
